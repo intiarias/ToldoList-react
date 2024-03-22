@@ -1,0 +1,62 @@
+:root {
+  color: #fff;
+  background: #242424;
+}
+
+#root {
+  background: #242424;
+}
+
+#titulo {
+
+font-family: Verdana;
+font-family: 'PT Sans';
+font-size: 5rem;
+padding-top: 3rem;
+padding-bottom: 2rem;
+text-align: center;
+color: #fff;
+background:#242424;
+}
+
+.container {
+ 
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background:#242424;
+
+}
+
+.inputComponent {
+
+  padding: 1rem ;
+  width: 80%;
+  height: 3rem;
+  border: 1px solid #3a2525;
+  border-radius: 8px;
+  background: #cacaca;
+}
+
+.contenedorTareas {
+
+  padding: 2rem;
+  color: #242424;
+  margin-top: 2rem;
+  background: #7ca87f;
+  width: 80%;
+  min-height: 6rem;
+  border-radius: 8px;
+}
+
+.botonAdd {
+  margin-left: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  height: 4rem;
+  width: 8rem;
+  background: #c7a4a4;
+}
+
+
+
