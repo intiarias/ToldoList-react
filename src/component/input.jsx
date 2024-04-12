@@ -1,6 +1,6 @@
 import Tareas from "./tareas"
 
-const Input = ({ handleChange, handleKeyDown, tarea}) => {
+const Input = ({ handleChange, handleKeyDown, tarea }) => {
     return (
         <>
             <input type="text"
@@ -11,7 +11,7 @@ const Input = ({ handleChange, handleKeyDown, tarea}) => {
                 placeholder="Agrega tu tarea"
                 name="Tarea" id="Task" />
 
-            <button type="submit"  className="botonAdd">Agregar tarea</button>
+         
         </>
     )
 }

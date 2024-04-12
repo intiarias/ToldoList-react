@@ -13,16 +13,25 @@ function App() {
 
   const handleChange = (e) => {
     setTarea(e.target.value)
+    console.log(e.target.value)
 
   }
 
-const handleKeyDown = (e) => {
+  const handleKeyDown = (e) => {
     if(e.key === 'Enter'){
       setTareas([...tareas, tarea]) 
       setTarea('')
     }
-
 }
+
+  const addbotton = (e) => {
+    setTareas ([...tareas, tarea])
+    setTarea('')
+  }
+
+
+
+
 
 
   return (
@@ -31,11 +40,19 @@ const handleKeyDown = (e) => {
       <div className="container ">
 
         <Input
+         onChange={handleChange}
          handleChange={handleChange}
          handleKeyDown={handleKeyDown}
          tarea={tarea} />
 
-        <Tareas tareas={tareas} />
+        <Tareas 
+        tareas={tareas}
+        setTareas={setTareas} />
+
+        <button type="submit" 
+        onClick={addbotton} 
+        className="botonAdd">Agregar tarea
+        </button>
 
          </div>
     </>
